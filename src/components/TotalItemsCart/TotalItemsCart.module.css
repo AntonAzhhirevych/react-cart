@@ -1,0 +1,15 @@
+.cartItems {
+  position: absolute;
+  font-size: 12px;
+  top: 10px;
+  right: 40px;
+  background: green;
+  padding: 1px 9px;
+  border-radius: 50%;
+  color: white;
+}
+
+.total {
+  margin: 0;
+  padding: 0;
+}

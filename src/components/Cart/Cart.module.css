@@ -1,0 +1,15 @@
+.cartBtn {
+  position: relative;
+  cursor: pointer;
+}
+
+.cartItems {
+  position: absolute;
+  font-size: 14px;
+  top: -9px;
+  right: 7px;
+  background: green;
+  /* padding: 0 10px; */
+  border-radius: 50%;
+  color: white;
+}

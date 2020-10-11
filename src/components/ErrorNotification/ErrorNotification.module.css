@@ -1,0 +1,11 @@
+.ErrorContainer {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+.Text {
+  margin: auto;
+  color: #bd0000;
+  font-size: 30px;
+}

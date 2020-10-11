@@ -1,0 +1,53 @@
+.orderFormContainer {
+  max-width: 400px;
+  width: 100%;
+}
+.orderForm {
+  margin: 0;
+  display: block;
+  /* line-height: 20px; */
+  font-weight: 400;
+  background: #ffffff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.orderFormInput {
+  width: 94%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  outline: none;
+}
+
+.orderFormInput:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid rgb(148, 146, 146);
+}
+
+.orderFormButton {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #43a047;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.orderFormButton:hover {
+  background: #63a767;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.orderFormButton :active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.orderFormTitle {
+  font-size: 20px;
+}

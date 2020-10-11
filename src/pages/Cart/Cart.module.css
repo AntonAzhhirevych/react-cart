@@ -1,0 +1,12 @@
+.cartContainer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cartContent {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}

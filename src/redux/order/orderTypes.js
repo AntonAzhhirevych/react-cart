@@ -1,0 +1,7 @@
+const types = {
+  POST_ORDER_START: 'POST_ORDER_START',
+  POST_ORDER_SUCCESS: 'POST_ORDER_SUCCESS',
+  POST_ORDER_ERROR: 'POST_ORDER_ERROR',
+};
+
+export default types;

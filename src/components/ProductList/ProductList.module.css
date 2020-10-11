@@ -1,0 +1,22 @@
+.productContainer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 50px 0 0 0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.list {
+  margin: 50px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+}
