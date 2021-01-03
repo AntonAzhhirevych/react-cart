@@ -3,7 +3,7 @@ import productActions from '../product/productActions';
 import cartActions from '../cart/cartAction';
 import orderActions from '../order/orderActions';
 
-const errorDefaultState = '';
+const errorDefaultState = null;
 
 const errorReducer = handleActions(
   {

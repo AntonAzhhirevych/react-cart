@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions';
 import cartActions from './cartAction';
 
-const defaultState = [];
+const defaultState = {};
 
 const cartReducer = handleActions(
   {
