@@ -7,14 +7,13 @@ import {
   error,
   getTotalPriceCart,
 } from '../../../../../redux/selectors/selectors';
-import getProductList from '../../../../../redux/stores/product/productOperations';
-import { getCartProduct } from '../../../../../redux/stores/cart/cartOperations';
 import Loader from '../../../../components/Loader/Loader';
+import productActions from '../../../../../redux/stores/product/productActions';
+import cartActions from '../../../../../redux/stores/cart/cartAction';
 
 class ProductListContainer extends Component {
   componentDidMount() {
     const { getProductList, getCartProduct } = this.props;
-
     getProductList();
     getCartProduct();
   }
@@ -40,9 +39,11 @@ const mapStateToProps = state => ({
   totalPriceCart: getTotalPriceCart(state),
 });
 
-const mapDispatchToProps = {
-  getProductList,
-  getCartProduct,
+const mapDispatchToProps = dispatch => {
+  return {
+    getProductList: () => dispatch(productActions.getProductListStart()),
+    getCartProduct: () => dispatch(cartActions.getCartListStart()),
+  };
 };
 
 export default connect(

@@ -1,5 +1,6 @@
-import changeLoading from './loadingAction';
+// import loadingActions from './loadingAction';
 
-const setLoading = boolean => dispatch => dispatch(changeLoading(boolean));
+// const setLoading = boolean => dispatch =>
+//   dispatch(loadingActions.changeLoading(boolean));
 
-export default setLoading;
+// export default setLoading;

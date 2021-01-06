@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CartList from './CartList';
+import cartActions from '../../../../../redux/stores/cart/cartAction';
 import { cart } from '../../../../../redux/selectors/selectors';
-import { getCartProduct } from '../../../../../redux/stores/cart/cartOperations';
 
 class CartListContainer extends Component {
   componentDidMount() {
@@ -21,8 +21,10 @@ const mapStateToProps = state => ({
   cartList: cart(state),
 });
 
-const mapDispatchToProps = {
-  getCartProduct,
+const mapDispatchToProps = dispatch => {
+  return {
+    getCartProduct: () => dispatch(cartActions.getCartListStart()),
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartListContainer);

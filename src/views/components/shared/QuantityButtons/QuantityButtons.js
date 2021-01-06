@@ -6,10 +6,12 @@ const QuantityButtons = ({ updateCartProduct, id }) => (
   <div className={styles.buttons}>
     <button
       className={styles.button}
-      onClick={updateCartProduct({
-        id,
-        action: UPDATE_CART_TYPE.DECREMENT,
-      })}
+      onClick={() =>
+        updateCartProduct({
+          id,
+          action: UPDATE_CART_TYPE.DECREMENT,
+        })
+      }
       type="button"
     >
       -
@@ -17,10 +19,12 @@ const QuantityButtons = ({ updateCartProduct, id }) => (
 
     <button
       className={styles.button}
-      onClick={updateCartProduct({
-        id,
-        action: UPDATE_CART_TYPE.INCREMENT,
-      })}
+      onClick={() =>
+        updateCartProduct({
+          id,
+          action: UPDATE_CART_TYPE.INCREMENT,
+        })
+      }
       type="button"
     >
       +

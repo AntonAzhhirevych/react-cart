@@ -3,4 +3,4 @@ import types from './loadingTypes';
 
 const changeLoading = createAction(types.SET_LOADING);
 
-export default changeLoading;
+export default { changeLoading };

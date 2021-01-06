@@ -1,7 +1,10 @@
 import { applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
+import createSagaMiddleware from 'redux-saga';
 import stateValidation from './state-validation';
 
-const enhancer = applyMiddleware(reduxThunk, stateValidation);
+const sagaMiddleware = createSagaMiddleware();
 
-export default enhancer;
+const enhancer = applyMiddleware(sagaMiddleware, reduxThunk, stateValidation);
+
+export { enhancer, sagaMiddleware };
