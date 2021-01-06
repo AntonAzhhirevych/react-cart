@@ -1,14 +1,13 @@
-import axios from 'axios';
 import productActions from './productActions';
-import API from '../../../constants/API';
 import changeDataFormat from '../../../utilites/changeDataFormat';
 import setLoading from '../loading/loadingOperation';
+import http from '../../../REST/http';
 
 const getProductList = () => dispatch => {
   dispatch(productActions.getProductListStart());
   dispatch(setLoading(true));
-  axios
-    .get(API.getProductList)
+  http
+    .getProduct()
     .then(product =>
       dispatch(productActions.getProductListSuccess(changeDataFormat(product))),
     )
