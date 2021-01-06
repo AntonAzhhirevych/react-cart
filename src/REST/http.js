@@ -15,7 +15,7 @@ const http = {
     return response;
   },
   postOrder: async order => {
-    const response = await axios.put(API.postOrder, order);
+    const response = await axios.post(API.postOrder, order);
     return response;
   },
 };

@@ -11,10 +11,9 @@ import Input from '../../../../components/common/FormsControls/Input';
 
 class OrderFormContainer extends Component {
   submit = values => {
-    const { cartList, postOrder, history } = this.props;
+    const { cartList, postOrder } = this.props;
     const newOrder = { ...values, listOfGoods: { ...cartList } };
     postOrder(newOrder);
-    history.push('/');
   };
 
   render() {
